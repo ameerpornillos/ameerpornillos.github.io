@@ -2,7 +2,9 @@
 layout: post
 title: ROOTCON 12 CTF Cryforbin 7 and Cryforbin 8 Write-Up
 subtitle: Write-up on how I was able to solve Cryforbin 7 and Cryforbin 8 challenges on ROOTCON 12 CTF.
+excerpt: Write-up on how I was able to solve Cryforbin 7 and Cryforbin 8 challenges on ROOTCON 12 CTF.
 comments: false
+thumbnail-img: https://i.imgur.com/ZmsLjUZ.jpg
 categories:
 - CTF 
 ---

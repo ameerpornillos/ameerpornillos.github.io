@@ -2,7 +2,9 @@
 layout: post
 title: Kioptrix Level 2 (VulnHub) - Complete Walkthrough and Guide
 subtitle: Here is a complete walkthrough and tutorial on how to beat Kioptrix Level 2 (Kioptrix - Level 1.1) of VulnHub to acquire root access.
+excerpt: Here is a complete walkthrough and tutorial on how to beat Kioptrix Level 2 (Kioptrix - Level 1.1) of VulnHub to acquire root access.
 comments: false
+thumbnail-img: https://i.imgur.com/hInZ9y4.jpg
 categories:
 - WalkThroughs 
 tags:

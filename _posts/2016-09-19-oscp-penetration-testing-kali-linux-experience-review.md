@@ -2,7 +2,9 @@
 layout: post
 title: My OSCP Penetration Testing with Kali Linux Experience and Review
 subtitle: I managed to pass the Offensive Security Certified Professional (OSCP) certification exam! Here is my experience and review on the PWK course.
+excerpt: I managed to pass the Offensive Security Certified Professional (OSCP) certification exam! Here is my experience and review on the PWK course.
 comments: false
+thumbnail-img: https://i.imgur.com/cG6bteO.jpg
 categories:
 - Certifications 
 tags:

@@ -2,7 +2,9 @@
 layout: post
 title: Hack The Box Battlegrounds Cyber Mayhem (Attack/Defense) Review + Strategies, Tips and Tricks
 subtitle: In this article, we will discuss Hack The Box BattleGround (HBG) Cyber Mayhem as well as spoiler free attack and defense strategies, tips and tricks for it.
+excerpt: In this article, we will discuss Hack The Box BattleGround (HBG) Cyber Mayhem as well as spoiler free attack and defense strategies, tips and tricks for it.
 comments: false
+thumbnail-img: https://i.imgur.com/7OnbIOp.png
 categories:
 - CTF 
 tags:

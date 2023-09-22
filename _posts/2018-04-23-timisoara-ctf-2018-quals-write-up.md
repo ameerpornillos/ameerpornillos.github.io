@@ -2,7 +2,9 @@
 layout: post
 title: Timisoara CTF 2018 Quals Write-Up
 subtitle: Here are my write-ups for Timisoara CTF (Capture the Flag) 2018 Quals.
+excerpt: Here are my write-ups for Timisoara CTF (Capture the Flag) 2018 Quals.
 comments: false
+thumbnail-img: https://i.imgur.com/kXWZ1nG.png
 categories:
 - CTF 
 ---

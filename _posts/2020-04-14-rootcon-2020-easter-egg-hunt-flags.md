@@ -2,7 +2,9 @@
 layout: post
 title: ROOTCON 2020 Easter-Egg Hunt Flags
 subtitle: This is my write-up on how I managed to solve some challenges on ROOTCON 2020 Easter-Egg Hunt.
+excerpt: This is my write-up on how I managed to solve some challenges on ROOTCON 2020 Easter-Egg Hunt.
 comments: false
+thumbnail-img: https://i.imgur.com/w1S4Qff.png
 categories:
 - CTF 
 ---

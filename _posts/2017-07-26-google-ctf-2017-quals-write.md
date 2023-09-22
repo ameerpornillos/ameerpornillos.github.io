@@ -2,7 +2,9 @@
 layout: post
 title: Google CTF 2017 (Quals) Write-Up
 subtitle: Here is my write-up for Google CTF 2017 (Quals) - Mindreader challenge.
+excerpt: Here is my write-up for Google CTF 2017 (Quals) - Mindreader challenge.
 comments: false
+thumbnail-img: https://i.imgur.com/NLNEgVj.png
 categories:
 - CTF 
 ---

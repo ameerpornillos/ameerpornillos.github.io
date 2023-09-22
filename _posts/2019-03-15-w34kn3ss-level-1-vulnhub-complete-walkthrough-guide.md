@@ -2,7 +2,9 @@
 layout: post
 title: W34kn3ss Level 1 (VulnHub) - Complete Walkthrough and Guide
 subtitle: Here is a complete walkthrough and tutorial on how to hack and penetrate W34kn3ss Level 1 (W34kn3ss 1) of VulnHub.
+excerpt: Here is a complete walkthrough and tutorial on how to hack and penetrate W34kn3ss Level 1 (W34kn3ss 1) of VulnHub.
 comments: false
+thumbnail-img: https://i.imgur.com/NXvgvbN.png
 categories:
 - WalkThroughs 
 tags:

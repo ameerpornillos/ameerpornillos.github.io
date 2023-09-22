@@ -2,7 +2,9 @@
 layout: post
 title: SickOs 1.2 (VulnHub) - Complete Walkthrough and Guide
 subtitle: SickOS 1.2 is a CTF (Capture the Flag) vulnerable machine from VulnHub which objective is to gain the highest privileges on the system.
+excerpt: SickOS 1.2 is a CTF (Capture the Flag) vulnerable machine from VulnHub which objective is to gain the highest privileges on the system.
 comments: false
+thumbnail-img: https://i.imgur.com/Vg48A3C.jpg
 categories:
 - WalkThroughs 
 tags:

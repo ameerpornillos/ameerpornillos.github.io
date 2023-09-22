@@ -2,7 +2,9 @@
 layout: post
 title: WPICTF 2018 Write-Up
 subtitle: Here are my write-ups for WPICTF (Capture the Flag) 2018.
+excerpt: Here are my write-ups for WPICTF (Capture the Flag) 2018.
 comments: false
+thumbnail-img: https://i.imgur.com/32Oqc16.png
 categories:
 - CTF 
 ---

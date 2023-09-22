@@ -2,7 +2,9 @@
 layout: post
 title: Metasploit Community CTF 2018 - 2 of Diamonds Write-Up
 subtitle: This is a write-up on how I was able to capture the 2 of Diamonds flag in Metasploit Community CTF 2018.
+excerpt: This is a write-up on how I was able to capture the 2 of Diamonds flag in Metasploit Community CTF 2018.
 comments: false
+thumbnail-img: https://i.imgur.com/b82jvHd.png
 categories:
 - CTF 
 ---

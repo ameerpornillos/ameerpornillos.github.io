@@ -2,7 +2,9 @@
 layout: post
 title: HackInOS Level 1 (VulnHub) - Complete Walkthrough and Guide
 subtitle: Here is a complete walkthrough and tutorial on how to hack and penetrate HackInOS Level 1 (HackInOS 1) of VulnHub.
+excerpt: Here is a complete walkthrough and tutorial on how to hack and penetrate HackInOS Level 1 (HackInOS 1) of VulnHub.
 comments: false
+thumbnail-img: https://i.imgur.com/7nSDVSz.png
 categories:
 - WalkThroughs 
 tags:
@@ -12,7 +14,7 @@ tags:
 Here is a complete walkthrough and tutorial on how to hack
 and penetrate HackInOS Level 1 (HackInOS: 1) of VulnHub.
 
-![](https://ethicalhackers.club/wp-content/uploads/2019/03/hackinos_vulnhub_walkthrough.png){: .mx-auto.d-block :}
+![](https://i.imgur.com/7nSDVSz.png){: .mx-auto.d-block :}
 
 ## HackInOS Level 1 Description:
 
