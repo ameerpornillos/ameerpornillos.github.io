@@ -4,7 +4,7 @@ title: About
 subtitle: Why Ethical Hackers Club?
 ---
 
-Hello! **EthicalHackers.club** is a personal blog/site of **Ameer Pornillos**, an information security enthusiast from Philippines. This site would be his journal about his journey in the world of ethical hacking, penetration testing, digital forensics and anything related to cyber security.
+Hello! **EthicalHackers.club** is a personal blog/site of **Ameer Pornillos**, a cyber security enthusiast from Philippines. This site would be his journal about his journey in the world of ethical hacking, penetration testing, digital forensics and anything related to cyber security.
 
 ## Ethical Hackers Club
 
