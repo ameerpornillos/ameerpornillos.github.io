@@ -16,6 +16,7 @@ social-network-links:
   github: ameerpornillos
   twitter: ameerpornillos
   youtube: EthicalHackersClub
+  linkedin: ameerp
 
 rss-description: An Information Security (InfoSec) blog. Learn ethical hacking, penetration testing, digital forensics and anything related to cyber security.
 
@@ -26,7 +27,7 @@ share-links-active:
 
 url-pretty: "EthicalHackers.club"
 
-excerpt_length: 50
+excerpt_length: 55
 
 feed_show_excerpt: true
 
