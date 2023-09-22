@@ -4,7 +4,7 @@ title: HackerOne h1-212 CTF Write-Up/Solution
 subtitle: Here is my write-up/solution on how I managed to solve the HackerOne h1-212 CTF.
 excerpt: Here is my write-up/solution on how I managed to solve the HackerOne h1-212 CTF.
 comments: false
-thumbnail-img: https://i.imgur.com/X4AqVc0.png
+thumbnail-img: https://i.imgur.com/WbwX4Qq.png
 categories:
 - CTF 
 ---
