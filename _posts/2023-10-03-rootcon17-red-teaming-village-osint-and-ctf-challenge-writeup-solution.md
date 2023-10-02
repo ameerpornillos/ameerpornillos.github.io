@@ -83,7 +83,7 @@ A major hint was also shared which is a [Mitre ATT&CK matrix](https://bit.ly/RC1
 
 ![](https://i.imgur.com/zYMyMnI.png){: .mx-auto.d-block :}
 
-Another hint was also provided during the 2nd day of ROOTCON 17 which is: *Spearphishing + ICMP (Linux)* (by the way all of these are in the Mitre ATT&CK matrix that was provided as hint).
+Another hint was also provided during the 2nd day of ROOTCON 17 which is: **Spearphishing + ICMP (Linux)**.
 
 The challenge is available as a room in **TryHackMe:** [**Cosmo**](https://tryhackme.com/jr/cosmo). (Player/s would [**need to be registered at TryHackMe**](https://tryhackme.com/signup?referrer=6160f102a5d5960041a2d321) and use his/her TryHackMe OpenVPN file to be able to interact with the machine.)
 
@@ -94,7 +94,7 @@ The challenge is available as a room in **TryHackMe:** [**Cosmo**](https://tryha
 
 #### Steps:
 1. Gather Victim Information (Email Addresses)
-2. Exploit Open Mail Relay (Find a valid user/victim)
+2. Exploit Open Mail Relay (Find valid user/victim)
 3. Send Spearphishing Link to the victim containing payload
 4. Await the victim to execute the payload
 5. Abuse ICMP (for files/directories discovery and data exfiltration)
@@ -102,16 +102,16 @@ The challenge is available as a room in **TryHackMe:** [**Cosmo**](https://tryha
 
 #### Challenges:
 The main hurdles a player may face while solving the challenge include:
-- Finding a valid user for spearphishing.
+- Finding valid user for spearphishing.
 - Crafting a payload to work with ICMP (the payload needs to run as a low privilege user, performing tasks such as executing commands and data exfiltration).
 - Bypassing antivirus (ClamAV is installed on the machine and scans the payload, causing some payloads to take longer to execute or even get quarantined as they are scanned first).
 - ~~Discovering and exploiting the privilege escalation vector.~~
 
 #### For this solution we will cover:
-- Port Scanning/Checking for Open Services
-- Gathering Victim Information (Email Addresses)
-- Exploit Open Mail Relay (Find a valid user/victim)
-- Send Spearphishing Link to the victim containing crafted payload (crafted payload shared will be limited to only acquire user.txt file)
+- Port scanning/checking for available services
+- Gathering victim information (email addresses)
+- Exploiting open mail relay (finding valid user/victim and sending the email using it)
+- Sending spearphishing link to the victim containing crafted payload *(crafted payload for this solution will be limited to only acquire user.txt file)*
 
 
 ##### Port Scanning/Checking for Open Services
@@ -122,7 +122,11 @@ sudo nmap {TARGET_MACHINE} -p1-10000 --min-rate 10000 --max-retries 3 -T4
 ![](https://i.imgur.com/I14gOiE.png){: .mx-auto.d-block :}
 
 ##### Gathering Victim Information (Email Addresses)
-Email addresses are available via the web application's Find Instructor page: *http://{MACHINE_IP}:8080/instructors?page=1* (the web application is available via port 8080)
+Email addresses are available via the web application's Find Instructor page (the web application is available via port 8080): 
+~~~
+http://{MACHINE_IP}:8080/instructors?page=1
+~~~
+
 
 ![](https://i.imgur.com/mfKf1V7.png){: .mx-auto.d-block :}
 
@@ -134,9 +138,9 @@ cewl 'http://{MACHINE_IP:8080/instructors?page=1' -n -e --email_file emails.txt
 
 
 {: .box-note}
-**Note:** By default cewl would not be able to find the email addresses in the web app. This is because cewl can only find email addresses with 2 to 4 letters as TLDs which a typical TLD consists of. 
+**Note:** By default, cewl would not be able to find the email addresses in the web app. This is because the default cewl can only find email addresses with 2 to 4 letters as TLDs which a typical TLD consists of. 
 
-To fix this, just edit the cewl tool (usually in /usr/bin/cewl) and change as seen below (by default in a normal Kali Linux installation it is in line 995 of the file): 
+To fix this, just edit the cewl tool (usually in /usr/bin/cewl) and change the regex on how it finds email addresses as seen below (in a new Kali Linux installation, it is in line 995 of the file): 
 
 ![](https://i.imgur.com/Llgp8uR.png){: .mx-auto.d-block :}
 
@@ -149,10 +153,10 @@ to
 
 This will grab at least 11 characters TLDs.
 
-Or alternatively, you could use other tools (e.g. curl, wget, etc.) to output the webpages and just parse the email addresseses.
+Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) to output the webpages and just parse the email addresseses.
 
 
-##### Exploit Open Mail Relay (Find a valid user/victim)
+##### Exploit Open Mail Relay (Find valid user/victim)
 If you did run a port scan, you should find a mail service running in port 25.
 
 Below are commands available from the server.
@@ -169,7 +173,7 @@ In order to find a valid user, you could use any of these commands: VRFY, MAIL F
 
 For this solution, we would use the **VRFY** command.
 
-Here is a script that would run through the list of emails and check whether the user is valid or not.
+Here is a script that would run through the list of emails and check whether the user is valid or not using VRFY command.
 
 ```
 #!/usr/bin/python3
@@ -218,13 +222,13 @@ TL;DR: The correct user is: **laughingman@rtv.local**
 ![](https://i.imgur.com/s1f3uju.png){: .mx-auto.d-block :}
 
 #### Fun Fact: 
-The original web application for the challenge was designed to have over hundreds of emails. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The emails was lessened to around 40+ to make the challenge more simple and easier.
+The original web application for the challenge was designed to have over hundreds of email addresses. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The emails was lessened to around 40+ to make the challenge more simple and easier.
 
 ##### Send Spearphishing Link to the victim containing crafted payload (crafted payload shared will be limited to only acquire user.txt file)
 
 Previously, it was found that **laughingman@rtv.local** is a valid target and a user that exist in the machine.
 
-The next step is to send a spearphishing email using the open mail relay with a link to the payload.
+The next step is to send a spearphishing email to the account using the open mail relay with a link to the payload.
 
 **Hosting the payload:**
 ~~~
@@ -244,7 +248,7 @@ Check this out! http://{ATTACKER_IP:PORT}/payload
 ~~~
 
 {: .box-warning}
-**Note:** You could any script or application you want. Basically, the idea is to send ICMP packets containing the data from the compromised machine and capture it back in your attacking server to examine the data.
+**Note:** You could use any script or application provided that it will allow you to send ICMP packets containing the data from the compromised machine and capture it back in your attacking server to examine the data.
 
 Here is an example payload that will send output of home directory listing as well as contents of the user.txt file.
 
@@ -330,7 +334,7 @@ if __name__ == "__main__":
 Wait for the victim to click the link and download the payload. Screenshot below shows receiving a web request from the victim's machine.
 ![](https://i.imgur.com/VqUw8tx.png){: .mx-auto.d-block :}
 
-After user runs the payload, you should be able to acquire the **user.txt** file. You could use the same tactic to enumerate the machine and try to escalate your privilege and acquire root.txt file.
+After the victim runs the payload, you should be able to acquire the **user.txt** file. You could use the same tactic to enumerate the machine and try to escalate your privilege and acquire root.txt file.
 
 ![](https://i.imgur.com/sEcSpaS.png){: .mx-auto.d-block :}
 
@@ -342,12 +346,12 @@ Thats it for the partial solution. If you are looking for an extra challenge, th
 Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
 {: .box-warning}
-**P.S.:** I would like to thank Guidem, especially Ian, Renzon, Rodel, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire Red Teaming Village Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, and Shav). Shoutout to all my idols, old friends and new friends I saw at the conference. It was nice seeing you all. 🫡
+**P.S.:** I would like to thank GuideM, especially Ian, Renzon, Rodel, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire Red Teaming Village Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, and Shav). Shoutout to all my idols, old friends and new friends I saw at the conference. It was nice seeing you all. 🫡
 
 Cheers! 🍻
 
-By the way here is the full video walkthrough in solving the **user.txt** flag for the **Red Teaming Village CTF Challenge at ROOTCON 17**.
+By the way, here is the **full video walkthrough** using the solutions above to solve the **user.txt** flag for the **Red Teaming Village CTF Challenge at ROOTCON 17**.
 <center>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="480" height="360" border="10" /></a></center>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="500" height="375" border="10" /></a></center>
 
 
