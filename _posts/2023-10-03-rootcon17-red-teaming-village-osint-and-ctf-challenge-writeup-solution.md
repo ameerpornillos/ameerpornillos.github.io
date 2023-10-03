@@ -130,7 +130,7 @@ http://{MACHINE_IP}:8080/instructors?page=1
 
 ![](https://i.imgur.com/mfKf1V7.png){: .mx-auto.d-block :}
 
-Use cewl to extract email addresses from the web app:
+Use [cewl](https://www.kali.org/tools/cewl/) to extract email addresses from the web app:
 ```
 cewl 'http://{MACHINE_IP}:8080/instructors?page=1' -n -e --email_file emails.txt
 ```
