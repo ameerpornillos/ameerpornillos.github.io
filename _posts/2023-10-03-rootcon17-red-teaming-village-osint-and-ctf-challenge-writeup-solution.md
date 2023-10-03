@@ -361,13 +361,15 @@ Thats it for the partial solution. If you are looking for an extra challenge, th
 Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
 {: .box-error}
-**P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
+**P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the [hackstreetboys](https://www.facebook.com/hackstreetboys) and their families that are present/attended the conference (Mon + Arcy, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
 
 Cheers! 🍻
 
 ### Video Walkthrough
 By the way, here is the **full video walkthrough** using the solutions above to solve the **user.txt** flag for the [**Red Teaming Village**](https://www.facebook.com/redteamingph) **CTF Challenge at ROOTCON 17**.
-<center>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="500" height="375" border="10" /></a></center>
+
+[![(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution](http://img.youtube.com/vi/ChXqsuu73q0/0.jpg)](http://www.youtube.com/watch?v=ChXqsuu73q0)
+
+
 
 
