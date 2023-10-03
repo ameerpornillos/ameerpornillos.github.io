@@ -167,7 +167,7 @@ Trying for open mail relay, you would notice that the mail server rejects sender
 
 ![](https://i.imgur.com/i3iHHrm.png){: .mx-auto.d-block :}
 
-Additionally, it rejects receipients that are not valid users.
+Additionally, it rejects recipients that are not valid users.
 
 ![](https://i.imgur.com/uIkYfJP.png){: .mx-auto.d-block :}
 
