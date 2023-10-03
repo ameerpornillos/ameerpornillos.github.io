@@ -163,7 +163,7 @@ Below are commands available from the server.
 
 ![](https://i.imgur.com/uMnphdH.png){: .mx-auto.d-block :}
 
-Trying for open mail relay, you would notice that the mail server rejects sender address that is not using the **"@rtv.local"** domain.
+Trying for open mail relay, you would notice that the mail server rejects sender address that is not using the **"@rtv.local"** domain (domain is used by email addresses in the website).
 
 ![](https://i.imgur.com/i3iHHrm.png){: .mx-auto.d-block :}
 
@@ -176,7 +176,7 @@ In order to find a valid user, you could use any of these commands: VRFY, MAIL F
 
 For this solution, we would use the **VRFY** command.
 
-Here is a script that would run through the list of emails and check whether the user is valid or not using VRFY command.
+Here is a script that would run through the list of email addresses and check whether the user is valid or not using VRFY command.
 
 ```
 #!/usr/bin/python3
@@ -227,7 +227,10 @@ TL;DR: The correct user is: **laughingman@rtv.local**
 #### Fun Fact: 
 The original web application for the challenge was designed to have over hundreds of email addresses. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The email addresses were lessened to around 40+ to make the challenge more simple and easier to solve.
 
-##### Send Spearphishing Link to the victim containing crafted payload (crafted payload shared will be limited to only acquire user.txt file)
+##### Send Spearphishing link to the victim containing crafted payload
+
+{: .box-warning}
+**Note:** Payload given here would be limited to acquiring the contents of the user.txt file via ICMP data exfiltration.
 
 Previously, it was found that **laughingman@rtv.local** is a valid target and a user that exist in the machine.
 
@@ -357,7 +360,7 @@ Thats it for the partial solution. If you are looking for an extra challenge, th
 
 Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
-{: .box-warning}
+{: .box-error}
 **P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
 
 Cheers! 🍻
