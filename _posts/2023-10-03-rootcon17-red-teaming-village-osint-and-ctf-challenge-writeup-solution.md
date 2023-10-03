@@ -365,6 +365,7 @@ Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
 Cheers! 🍻
 
+### Video Walkthrough
 By the way, here is the **full video walkthrough** using the solutions above to solve the **user.txt** flag for the [**Red Teaming Village**](https://www.facebook.com/redteamingph) **CTF Challenge at ROOTCON 17**.
 <center>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="500" height="375" border="10" /></a></center>
