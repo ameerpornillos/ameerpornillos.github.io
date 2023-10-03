@@ -9,7 +9,7 @@ categories:
 - CTF 
 ---
 
-Below are the solutions to the **Open Source Intelligence (OSINT)** and **Capture the Flag (CTF) challenges** I created for [**Red Teaming Village**](https://www.facebook.com/redteamingph) at **ROOTCON 17**.
+Below are the solutions to the **Open Source Intelligence (OSINT)** and **Capture the Flag (CTF) challenges** I created for [**Red Teaming Village**](https://www.facebook.com/redteamingph) at [**ROOTCON 17**](https://www.facebook.com/rootcon).
 
 {: .box-note}
 **Note:** As there were no solvers for the CTF challenge, I will only be sharing a partial solution (acquiring user.txt file). Since, I might also plan to use the same concept in future challenges.
