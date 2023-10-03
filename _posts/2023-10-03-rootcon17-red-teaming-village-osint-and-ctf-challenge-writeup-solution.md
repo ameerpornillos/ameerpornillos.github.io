@@ -151,7 +151,7 @@ to
 "while /\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,11})\b/i.match(word)"
 ~~~
 
-This will grab at least 11 characters TLDs.
+This will grab at least 11 letters of TLDs
 
 Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) to output the webpages and just parse the email addresses.
 
