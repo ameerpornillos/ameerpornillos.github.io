@@ -153,7 +153,7 @@ to
 
 This will grab at least 11 characters TLDs.
 
-Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) to output the webpages and just parse the email addresseses.
+Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) to output the webpages and just parse the email addresses.
 
 
 ##### Exploit Open Mail Relay (Find valid user/victim)
@@ -223,6 +223,10 @@ with open(args.emails_file, "r") as file:
 TL;DR: The correct user is: **laughingman@rtv.local**
 
 ![](https://i.imgur.com/s1f3uju.png){: .mx-auto.d-block :}
+
+By the way, if you tried to check the user information in the web app, you should see **"Data Exfiltration Techniques"**, which is a minor hint related to the challenge. (◕‿◕)
+
+![](https://i.imgur.com/ehTP5Xf.png){: .mx-auto.d-block :}
 
 #### Fun Fact: 
 The original web application for the challenge was designed to have over hundreds of email addresses. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The email addresses were lessened to around 40+ to make the challenge more simple and easier to solve.
