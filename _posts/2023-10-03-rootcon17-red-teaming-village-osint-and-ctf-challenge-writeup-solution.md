@@ -151,7 +151,7 @@ to
 "while /\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,11})\b/i.match(word)"
 ~~~
 
-This will grab at least 11 letters of TLDs
+This will grab at least 11 letters of TLDs.
 
 Or alternatively, you could use other tools (e.g. Burp Suite, curl, wget, etc.) to output the webpages and just parse the email addresses.
 
@@ -224,7 +224,7 @@ TL;DR: The correct user is: **laughingman@rtv.local**
 
 ![](https://i.imgur.com/s1f3uju.png){: .mx-auto.d-block :}
 
-By the way, if you tried to check the user information in the web app, you should see **"Data Exfiltration Techniques"**, which is a minor hint related to the challenge. (◕‿◕)
+By the way, if you tried to check the user information for the correct user in the web app, you should see **"Data Exfiltration Techniques"**, which is a minor hint related to the challenge. (◕‿◕)
 
 ![](https://i.imgur.com/ehTP5Xf.png){: .mx-auto.d-block :}
 
@@ -242,7 +242,7 @@ The next step is to send a spearphishing email to the account using the open mai
 
 **Hosting the payload:**
 ~~~
-python3 -m http.server 1337
+python3 -m http.server {PORT}
 ~~~
 
 **Sending the email via open mail relay vulnerability:**
@@ -311,7 +311,7 @@ if __name__ == "__main__":
 {: .box-warning}
 **Note:** Below is an example script to capture ICMP packets. The idea is to capture the packets and be able to examine it. You could also use packet analyzer tools such as WireShark, though keep in mind that you might need to parse the data output into a more readable format.
 
-Here is an example script for the attacking machine to capture ICMP packets and unpack it.
+Here is an example script that works along with the previous script for the machine to capture the ICMP packets, unpack them, and display them in a more readable format.
 
 ```
 #!/usr/bin/python3
@@ -370,7 +370,7 @@ Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 Cheers! 🍻
 
 ### Video Walkthrough
-By the way, here is the [**full video walkthrough**](http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0) using the solutions above to solve the **user.txt** flag for the [**Red Teaming Village**](https://www.facebook.com/redteamingph) **CTF Challenge at ROOTCON 17**.
+Here is the [**full video walkthrough**](http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0) using the solutions above to solve the **user.txt** flag for the [**Red Teaming Village**](https://www.facebook.com/redteamingph) **CTF Challenge at ROOTCON 17**.
 
 <center>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="500" height="375" border="10" /></a></center>
