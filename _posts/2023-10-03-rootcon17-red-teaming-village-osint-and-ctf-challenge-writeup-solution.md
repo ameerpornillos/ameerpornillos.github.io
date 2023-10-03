@@ -361,7 +361,7 @@ Thats it for the partial solution. If you are looking for an extra challenge, th
 Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
 {: .box-error}
-**P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the [hackstreetboys](https://www.facebook.com/hackstreetboys) and their families that are present/attended the conference (Mon + Arcy, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
+**P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcy, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
 
 Cheers! 🍻
 
