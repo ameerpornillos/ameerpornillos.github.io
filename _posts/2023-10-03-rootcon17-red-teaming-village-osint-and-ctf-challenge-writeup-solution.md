@@ -9,7 +9,7 @@ categories:
 - CTF 
 ---
 
-Below are the solutions to the **Open Source Intelligence (OSINT)** and **Capture the Flag (CTF) challenges** I created for **Red Teaming Village** at **ROOTCON 17**.
+Below are the solutions to the **Open Source Intelligence (OSINT)** and **Capture the Flag (CTF) challenges** I created for [**Red Teaming Village**](https://www.facebook.com/redteamingph) at **ROOTCON 17**.
 
 {: .box-note}
 **Note:** As there were no solvers for the CTF challenge, I will only be sharing a partial solution (acquiring user.txt file). Since, I might also plan to use the same concept in future challenges.
@@ -77,7 +77,7 @@ Originally, a *QR Code* was supposed to be hidden in [one of the videos](https:/
 ![](https://i.imgur.com/FAvyeqN.png){: .mx-auto.d-block :}
 
 ### Description:
-Here is one of the **CTF Challenge for Red Teaming Village** at **ROOTCON 17**. This is a **boot to root machine challenge** where the players need to find vulnerabilities in the machine and exploit it. The aim is to infiltrate the machine and capture all flags (be able to acquire user.txt and root.txt).
+Here is one of the **CTF Challenge for** [**Red Teaming Village**](https://www.facebook.com/redteamingph) at **ROOTCON 17**. This is a **boot to root machine challenge** where the players need to find vulnerabilities in the machine and exploit it. The aim is to infiltrate the machine and capture all flags (be able to acquire user.txt and root.txt).
 
 A major hint was also shared which is a [Mitre ATT&CK matrix](https://bit.ly/RC17-RTV-CTF-Challenge) covering all tactics, techniques, and procedures to compromise the target machine.
 
@@ -358,11 +358,11 @@ Thats it for the partial solution. If you are looking for an extra challenge, th
 Thanks for reading! · (*ˊᗜˋ*)/ᵗᑋᵃᐢᵏ ᵞᵒᵘ*
 
 {: .box-warning}
-**P.S.:** I would like to thank GuideM, especially Ian, Renzon, Rodel, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire Red Teaming Village Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, and Shav). Shoutout to all my idols, old friends and new friends I saw at the conference. It was nice seeing you all. 🫡
+**P.S.:** I would like to thank GuideM, especially Ian, Renzon, and their entire team, for sponsoring the Red Teaming Village at ROOTCON 17. Thank you! 🙏 I would also like to express my gratitude to the entire [**Red Teaming Village**](https://www.facebook.com/redteamingph) Team at ROOTCON 17, as well as all the hackstreetboys and their families that are present/attended the conference (Mon + Arcee, AJ, Emman, Ariz, Felix, Ian, CJ, Ronald, Shav, Rodel, Bianca and Sir Mon). Shoutout to all my idols, friends and acquaintances I saw at the conference. It was nice seeing you all. 🫡
 
 Cheers! 🍻
 
-By the way, here is the **full video walkthrough** using the solutions above to solve the **user.txt** flag for the **Red Teaming Village CTF Challenge at ROOTCON 17**.
+By the way, here is the **full video walkthrough** using the solutions above to solve the **user.txt** flag for the [**Red Teaming Village**](https://www.facebook.com/redteamingph) **CTF Challenge at ROOTCON 17**.
 <center>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ChXqsuu73q0" target="_blank"><img align="center" src="http://img.youtube.com/vi/ChXqsuu73q0/0.jpg" alt="(ROOTCON 17) Red Teaming Village's OSINT and CTF Challenge Walkthrough/Solution" width="500" height="375" border="10" /></a></center>
 
