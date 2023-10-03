@@ -38,7 +38,7 @@ This task can also be automated using available YouTube scripts for example: [yo
 
 ![](https://i.imgur.com/Gv6lTCF.png){: .mx-auto.d-block :}
 
-Here is a sample code implementing the youtube-transcript-api.
+Here is a sample code implementing the youtube-transcript-api to get the passphrase (flag).
 
 ```
 #!/usr/bin/python3
@@ -93,12 +93,12 @@ The challenge is available as a room in **TryHackMe:** [**Cosmo**](https://tryha
 **Note:** As mentioned earlier, only a partial solution covering the acquisition of the **user.txt** file will be shared.
 
 #### Steps:
-1. Gather Victim Information (Email Addresses)
-2. Exploit Open Mail Relay (Find valid user/victim)
-3. Send Spearphishing Link to the victim containing payload
+1. Gather victim information (email addresses)
+2. Exploit open mail relay (find valid user/victim and use this for sending email/s)
+3. Send spearphishing link to the victim containing payload
 4. Await the victim to execute the payload
 5. Abuse ICMP (for files/directories discovery and data exfiltration)
-6. ~~Escalate Privileges~~
+6. ~~Escalate privileges~~
 
 #### Challenges:
 The main hurdles a player may face while solving the challenge include:
@@ -222,7 +222,7 @@ TL;DR: The correct user is: **laughingman@rtv.local**
 ![](https://i.imgur.com/s1f3uju.png){: .mx-auto.d-block :}
 
 #### Fun Fact: 
-The original web application for the challenge was designed to have over hundreds of email addresses. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The emails was lessened to around 40+ to make the challenge more simple and easier.
+The original web application for the challenge was designed to have over hundreds of email addresses. The idea is to compare the "Find Instructors" results to the "Official Instructors" and grabbing only the emails of the "Official Instructors" (so it was not needed to check all of the emails if they are valid). The email addresses were lessened to around 40+ to make the challenge more simple and easier to solve.
 
 ##### Send Spearphishing Link to the victim containing crafted payload (crafted payload shared will be limited to only acquire user.txt file)
 
@@ -248,9 +248,9 @@ Check this out! http://{ATTACKER_IP:PORT}/payload
 ~~~
 
 {: .box-warning}
-**Note:** You could use any script or application provided that it will allow you to send ICMP packets containing the data from the compromised machine and capture it back in your attacking server to examine the data.
+**Note:** You could use any script or application provided that it will allow you to exfiltrate data using ICMP from the compromised machine.
 
-Here is an example payload that will send output of home directory listing as well as contents of the user.txt file.
+Here is an example payload that will exfiltrate the output of home directory listing as well as contents of the user.txt file via ICMP.
 
 ```
 #!/usr/bin/python3
@@ -291,7 +291,8 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
+{: .box-warning}
+**Note:** Below is an example script to capture ICMP packets. The idea is to capture the packets and be able to examine it. You could also use packet analyzer tools such as WireShark, though keep in mind that you might need to parse the data output into a more readable format.
 
 Here is an example script for the attacking machine to capture ICMP packets and unpack it.
 
