@@ -81,8 +81,6 @@ Hack transaction:
 
 Below is an example article giving more information about the hack (also providing direct answer to the question).
 
-![](https://i.imgur.com/htFewUn.png)
-
 ![](https://i.imgur.com/oAMMAnL.png)
 
 Verification of the hack transaction
@@ -273,7 +271,15 @@ Solution: Doing a Google image search using the picture will give you result of 
 
 ![](https://i.imgur.com/k4DQDxl.png)
 
+Accessing the site will give you an exact match of the plaque in one of its links.
+
+![](https://i.imgur.com/I9rksxp.png)
+
+First page Google result of searching for the found name will give you his "alias".
+
 ![](https://i.imgur.com/Bkp3mV3.png)
+
+Reference section will lead to an archive interview naming his favorite weapon.
 
 ![](https://i.imgur.com/c6TQWmK.png)
 
