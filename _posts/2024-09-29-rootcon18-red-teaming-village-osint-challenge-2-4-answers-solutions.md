@@ -81,6 +81,8 @@ Hack transaction:
 
 Below is an example article giving more information about the hack (also providing direct answer to the question).
 
+![](https://i.imgur.com/JmYSmiw.png)
+
 ![](https://i.imgur.com/oAMMAnL.png)
 
 Verification of the hack transaction
