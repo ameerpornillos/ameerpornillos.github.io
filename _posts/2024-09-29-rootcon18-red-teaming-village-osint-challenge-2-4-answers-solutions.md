@@ -43,7 +43,7 @@ First 2 users above are the winners for Challenge 2 but other solvers (answered 
 ## Challenge Answers/Solutions
 
 {: .box-note}
-**Note:** The solutions provided below are only on areas where most participants commonly failed to find the correct answers. Also all images where taken from mobile phone, just to show all questions are solvable using it.
+**Note:** The solutions provided below are only on areas where most participants commonly failed to find the correct answers. Also, all images were taken from a mobile phone, just to show all questions are solvable using it.
 
 ### OSINT Challenge 4 / Easy Challenge (challenge URL/code: Eyr3v1akmocNfobJ)
 
