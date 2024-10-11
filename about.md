@@ -44,6 +44,10 @@ Probably nothing, but here are some CTFtime.org stats. The author mostly played 
 - 2017 - [#1 Philippines (CTFtime.org)](https://ctftime.org/stats/2017/PH)
 - 2016 - [#2 Philippines (CTFtime.org)](https://ctftime.org/stats/2016/PH)
 
+#### Disclosed Vulnerabilities/CVEs
+- 2018 - [CVE‑2018‑19246](https://nvd.nist.gov/vuln/detail/CVE-2018-19246)
+- 2018 - [CVE‑2018‑19135](https://nvd.nist.gov/vuln/detail/CVE-2018-19135)
+
 ### $> cat disclaimer.txt
 
 All information provided here is for educational purposes only. Please note that the content of this site is based on the author’s personal learning and experience.
